@@ -16,24 +16,32 @@
   <body class="text-sm">
     <main class="flex flex-col min-h-screen items-center justify-center">
       <!-- wrapper -->
-      <div class="card-wrapper rounded-xl flex flex-col items-center justify-center p-6 max-w-xs mx-auto">
+      <div
+        class="card-wrapper rounded-xl flex flex-col items-center justify-center p-6 max-w-xs mx-auto mobile:max-w-md desktop:max-w-lg"
+      >
         <div class="my-4">
           <img
             src="./assets/images/avatar-jessica.jpeg"
             alt="jessica_avatar"
-            class="rounded-full items-center justify-center w-32 h-32"
+            class="rounded-full items-center justify-center w-30 h-30 mobile:w-40 mobile:h-40 desktop:w-48 desktop:h-48"
           />
         </div>
-        <!-- info  -->
+        <!-- info -->
         <div class="text-center items-center font-medium my-4 space-y-0.5">
-          <h1 class="text-2xl">Jessica Randall</h1>
-          <h2 class="name">London, United Kingdom</h2>
+          <h1 class="text-2xl mobile:text-3xl desktop:text-4xl">
+            Jessica Randall
+          </h1>
+          <h2 class="name text-sm mobile:text-base desktop:text-lg">
+            London, United Kingdom
+          </h2>
         </div>
         <!-- socials -->
         <div class="my-4">
-          <p>"Front-end developer and avid reader"</p>
+          <p class="text-sm mobile:text-base">
+            "Front-end developer and avid reader"
+          </p>
           <ul
-            class="flex flex-col w-full items-center justify-center space-y-2 mt-2"
+            class="flex flex-col w-full items-center justify-center space-y-2 mt-2 mobile:space-y-3 desktop:space-y-4"
           >
             <li class="box">
               <a href="https://github.com/babyanonymouse">GitHub</a>
@@ -54,7 +62,7 @@
         </div>
       </div>
       <!-- code-by -->
-      <div class="attribution my-3">
+      <div class="attribution my-3 text-xs mobile:text-sm desktop:text-base">
         Challenge by
         <a
           href="https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ"
