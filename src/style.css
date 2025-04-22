@@ -1,6 +1,22 @@
 @import 'tailwindcss';
 
+/* inter font */
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
 /* normal body */
+body {
+    font-family: Inter, sans-serif;
+    background-color: hsl(0, 0%, 8%);
+    color: white;
+}
+
+.card-wrapper {
+    background-color: hsl(0, 0%, 12%);
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -8,4 +24,8 @@
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+.name {
+    color: hsl(75, 94%, 57%);
 }
