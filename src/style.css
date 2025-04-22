@@ -1,5 +1,11 @@
 @import 'tailwindcss';
 
+/* screens */
+@theme {
+    --breakpoint-mobile: 30rem;
+    --breakpoint-desktop: 100rem;
+}
+
 /* inter font */
 @font-face {
     font-family: 'Inter';
@@ -28,4 +34,14 @@ body {
 
 .name {
     color: hsl(75, 94%, 57%);
+}
+
+.box {
+    background-color: hsl(0, 0%, 20%);
+    @apply rounded-lg w-full text-center py-2 font-medium;
+}
+
+.box:hover {
+    background-color: hsl(75, 94%, 57%);
+    @apply text-black transition;
 }
